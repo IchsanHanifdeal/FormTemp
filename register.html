@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Register</title>
+    <style>
+      .card {
+        padding: 20px;
+      }
+
+      .form-control {
+        padding: 10px;
+      }
+
+      .error {
+        border: 2px solid red;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Membuat header dengan logo menggunakan komponen navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+      <div class="container">
+        <a
+          class="navbar-brand text-center"
+          href="#"
+          style="font-size: 28px; color: black; width: 100%; font-weight: bold"
+        >
+          Membuat Prototype Form
+        </a>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card mt-5 mb-5 shadow">
+            <div class="card-body">
+              <!-- Formulir -->
+              <!-- Kolom pertama -->
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="username"
+                      placeholder="Username"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="alamat"
+                      placeholder="Alamat"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- Kolom kedua -->
+              <div class="row mt-4">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="password"
+                      placeholder="Kata Sandi"
+                      required
+                    />
+                    <label>Panjang kata Sandi haruslah 8 - 20 Karakter</label>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="alamat-lanjutan"
+                      placeholder="Alamat Lanjutan"
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- Kolom ketiga -->
+              <div class="row mt-4">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="ulangi-password"
+                      placeholder="Ulangi Kata Sandi"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="col-md-1">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="rt"
+                      placeholder="RT"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="col-md-1">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="rw"
+                      placeholder="RW"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="kelurahan"
+                      placeholder="Kelurahan"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- Kolom keempat -->
+              <div class="row mt-4">
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="nama-depan"
+                      placeholder="Nama Depan"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="nama-belakang"
+                      placeholder="Nama Belakang"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="kecamatan"
+                      placeholder="Kecamatan"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="kota"
+                      placeholder="Kota"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- Kolom kelima -->
+              <div class="row mt-4">
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      placeholder="Email"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="hp"
+                      placeholder="HP"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <select
+                      class="form-control"
+                      id="provinsi"
+                      required
+                    >
+                      <option value="">Pilih Provinsi</option>
+                      <option value="aceh">Aceh</option>
+                      <option value="bali">Bali</option>
+                        <option value="bangka-belitung">Bangka Belitung</option>
+                        <option value="banten">Banten</option>
+                        <option value="bengkulu">Bengkulu</option>
+                        <option value="gorontalo">Gorontalo</option>
+                        <option value="jakarta">DKI Jakarta</option>
+                        <option value="jambi">Jambi</option>
+                        <option value="jawa-barat">Jawa Barat</option>
+                        <option value="jawa-tengah">Jawa Tengah</option>
+                        <option value="jawa-timur">Jawa Timur</option>
+                        <option value="kalimantan-barat">Kalimantan Barat</option>
+                        <option value="kalimantan-selatan">Kalimantan Selatan</option>
+                        <option value="kalimantan-tengah">Kalimantan Tengah</option>
+                        <option value="kalimantan-timur">Kalimantan Timur</option>
+                        <option value="kalimantan-utara">Kalimantan Utara</option>
+                        <option value="kepulauan-riau">Kepulauan Riau</option>
+                        <option value="lampung">Lampung</option>
+                        <option value="maluku">Maluku</option>
+                        <option value="maluku-utara">Maluku Utara</option>
+                        <option value="nusa-tenggara-barat">Nusa Tenggara Barat</option>
+                        <option value="nusa-tenggara-timur">Nusa Tenggara Timur</option>
+                        <option value="papua">Papua</option>
+                        <option value="papua-barat">Papua Barat</option>
+                        <option value="riau">Riau</option>
+                        <option value="sulawesi-barat">Sulawesi Barat</option>
+                        <option value="sulawesi-selatan">Sulawesi Selatan</option>
+                        <option value="sulawesi-tengah">Sulawesi Tengah</option>
+                        <option value="sulawesi-tenggara">Sulawesi Tenggara</option>
+                        <option value="sulawesi-utara">Sulawesi Utara</option>
+                        <option value="sumatera-barat">Sumatera Barat</option>
+                        <option value="sumatera-selatan">Sumatera Selatan</option>
+                        <option value="sumatera-utara">Sumatera Utara</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+    <!-- Tombol "Back" dan "Daftar" -->
+    <div class="row mt-4">
+        <div class="col-md-6">
+          <a
+            class="btn btn-secondary"
+            style="width: 10%; border-color: #000000; background: #FFF; color: #000"
+            href="index.html"
+          >
+            Balik
+          </a>
+        </div>
+        <div class="col-md-6 d-flex justify-content-end">
+          <a
+            class="btn btn-primary"
+            style="width: 15%; border-color: #000000; background: #FFF; color: #000"
+            id="daftarButton"
+          >
+            Daftar
+          </a>
+        </div>
+      </div>
+              <!-- Akhir formulir -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="jumbotron jumbotron-fluid"
+      style="background-color: #888888; color: #000000"
+    >
+    <div
+      class="jumbotron jumbotron-fluid fixed-bottom"
+      style="background-color: #888888; color: #000000"
+    >
+      <div class="container text-center mt-4 mb-4">
+        <p class="lead" style="font-size: 22px;">2023 &copy Norhayati</p>
+      </div>
+    </div>
+
+    <script>
+      // Mendengarkan klik pada tombol "Daftar"
+      const daftarButton = document.getElementById("daftarButton");
+      daftarButton.addEventListener("click", () => {
+        // Periksa apakah semua input telah diisi
+        const inputs = document.querySelectorAll("input[required], select[required]");
+        let isFormValid = true;
+
+        inputs.forEach((input) => {
+          if (input.value.trim() === "") {
+            input.classList.add("error");
+            isFormValid = false;
+          } else {
+            input.classList.remove("error");
+          }
+        });
+
+        if (!isFormValid) {
+          alert("Harap isi semua bidang yang wajib!");
+        } else {
+          alert("Formulir valid. Anda dapat melanjutkan.");
+        }
+      });
+    </script>
+  </body>
+</html>

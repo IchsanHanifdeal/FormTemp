@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Memasukkan file CSS dan JS Bootstrap 5 dari CDN -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <title>Login</title>
+  <style>
+    .illustration {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <!-- Membuat header dengan logo menggunakan komponen navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+    <div class="container">
+      <a
+        class="navbar-brand text-center"
+        href="#"
+        style="font-size: 28px; color: black; width: 100%; font-weight: bold"
+      >
+        Membuat Prototype Form
+      </a>
+    </div>
+  </nav>
+  <!-- Membuat konten utama dengan form login dan ilustrasi menggunakan sistem grid -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 order-1 order-md-1"> <!-- Urutan kolom diubah untuk tampilan mobile -->
+        <img src="assets/images/login.png" alt="Ilustrasi" class="img-fluid mt-4 mb-4 illustration" />
+      </div>
+      <div class="col-md-6 order-2 order-md-2"> <!-- Urutan kolom diubah untuk tampilan mobile -->
+        <div class="card mt-4 mb-4 shadow">
+          <div class="card-body">
+            <h2 class="card-title text-center">Masuk ke akun anda</h2>
+            <form>
+              <div class="mb-3">
+                <input type="text" class="form-control" id="username" placeholder="Username" />
+              </div>
+              <div class="mb-3">
+                <input type="password" class="form-control" id="password" placeholder="Password" />
+              </div>
+              <button type="submit" class="btn btn-primary" style="background-color:#222; width:100%">Masuk</button>
+            </form>
+            <div class="form-check mt-3"> <!-- Form-check untuk tampilan checkbox -->
+              <input type="checkbox" class="form-check-input" id="forgot-password">
+              <label class="form-check-label" for="forgot-password">Ingat Kata Sandi</label>
+            </div>
+            <a href="register.html" class="btn btn-primary mt-4" style="background-color:#FFF; width:100%; color:#000">Register</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+      class="jumbotron jumbotron-fluid"
+      style="background-color: #888888; color: #000000"
+    >
+    <div
+      class="jumbotron jumbotron-fluid fixed-bottom"
+      style="background-color: #888888; color: #000000"
+    >
+      <div class="container text-center mt-4 mb-4">
+        <p class="lead" style="font-size: 22px;">2023 &copy Norhayati</p>
+      </div>
+    </div>
+</body>
+</html>
